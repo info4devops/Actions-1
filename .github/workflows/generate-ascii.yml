@@ -22,5 +22,5 @@ jobs:
           run: cat lion.txt
         
         - name: List Repo File
-          run: ls -lart          
+          run: ls -lrat          
 
