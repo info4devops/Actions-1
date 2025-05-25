@@ -13,7 +13,7 @@ jobs:
         run: sudo apt-get install cowsay -y
 
       - name: Execute Cowsay CMD
-        run: cowsay -f lion "Run for cover, I am a LION.. .. RAWR" > lion.txt
+        run: cowsay -f lion "Run for cover, I am a LION.. .. RAWR" >> lion.txt
 
       - name: Test File Exists
         run: grep -i "lion" lion.txt
