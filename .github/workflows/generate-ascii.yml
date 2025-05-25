@@ -19,7 +19,7 @@ jobs:
         run: grep -i "dragon" dragon.txt
 
       - name: Read File
-        run: cat lion.txt
+        run: cat dragon.txt
 
       - name: List Repo File
         run: ls -lrat
