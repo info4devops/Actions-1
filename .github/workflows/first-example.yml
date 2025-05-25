@@ -4,16 +4,16 @@ on: push
 jobs:
     first_job:
         runs-on: ubuntu-latest
-        
+
         steps:
         - name: Checkout Git Repo
           uses: actions/checkout@v4
 
-        - name: Welcome message
-          run: echo "My First GitHub Actions Job"
+        - name: List and Read file
+          run: | #pipe
+            echo "My First GitHub Actions Job"
+            ls
+            cat README.md
         
-        - name: List File
-          run: ls
-        
-        - name: Read Files
-          run: cat README.md
+        - name: Generate ASCII ArtWork
+          run: cowsay -f lion "Run for cover, I am a LION.. .. RAWR" lion.txt    
