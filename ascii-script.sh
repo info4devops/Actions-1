@@ -1,4 +1,4 @@
-#!/bin/bash  # shebang
+#!/bin/bash
 
 # Install cowsay if not already installed
 sudo apt-get install cowsay -y
