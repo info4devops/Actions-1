@@ -10,7 +10,10 @@ jobs:
         uses: actions/checkout@v4
 
       - name: List Repo Files
-        run: ls -lart
+        run: |
+          ls -lart
+          ls -l ascii-script.sh
+
 
       - name: Execute Shell Script
         run: ./ascii-script.sh
