@@ -13,4 +13,4 @@ grep -i "dragon" dragon.txt
 cat dragon.txt
 
 # List the files in the current directory
-ls
+ls -lart
