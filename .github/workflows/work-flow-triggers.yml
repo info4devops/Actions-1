@@ -1,13 +1,12 @@
 name: Exploring Work Flow Triggers
 
 on: 
-  schedule:
-    - cron: "2 * * * *" # Runs at every minute
-
+  workflow_dispatch: 
+  
 jobs:
   Work_Flow_Triggers:
     runs-on: ubuntu-latest 
 
     steps:
       - name: Cron Job
-        run: echo "Executed Using Cron Job Event"
+        run: echo "Executed Using manual Trigger"
