@@ -4,9 +4,21 @@ on:
   workflow_dispatch: 
   
 jobs:
-  Work_Flow_Triggers:
+
+  Build:
+    runs-on: ubuntu-latest 
+
+    steps:
+      - name: Building 
+        run: echo "Building Sucessfully"
+
+  Deply:
+    needs: Build
+    concurrency: 
+      group: Production-Deloyment
+      cancel-in-progress: true
     runs-on: ubuntu-latest 
 
     steps:
       - name: Cron Job
-        run: echo "Executed Using manual Trigger"
+        run: echo "Deployed Sucessfully"
