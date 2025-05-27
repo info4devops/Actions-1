@@ -1,0 +1,13 @@
+name: Exploring Work Flow Triggers
+
+on: 
+  schedule:
+    - cron: "* * * * *" # Runs at every minute
+
+jobs:
+  Work_Flow_Triggers:
+    runs-on: ubuntu-latest 
+
+    steps:
+      - name: Cron Job
+        run: echo "Executed Using Cron Job Event"
