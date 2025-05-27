@@ -2,7 +2,7 @@ name: Exploring Work Flow Triggers
 
 on: 
   schedule:
-    - cron: "* * * * *" # Runs at every minute
+    - cron: "2 * * * *" # Runs at every minute
 
 jobs:
   Work_Flow_Triggers:
