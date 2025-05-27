@@ -1,0 +1,12 @@
+name: Exploring Variables at workflow level
+
+env:
+  GLOBAL_ENV: "workflow level"
+
+on: [push]
+
+jobs:
+  example-job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Global env is $GLOBAL_ENV"
