@@ -1,0 +1,12 @@
+name: Exploring Variables at Step level
+
+on: [push]
+
+jobs:
+  example_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step with env variable
+        env:
+          STEP_ENV: "step level"
+        run: echo "Step env is $STEP_ENV"      
