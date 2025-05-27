@@ -16,7 +16,7 @@ jobs:
     needs: Build
     concurrency: 
       group: Production-Deloyment
-      cancel-in-progress: true
+      cancel-in-progress: false
     runs-on: ubuntu-latest 
 
     steps:
