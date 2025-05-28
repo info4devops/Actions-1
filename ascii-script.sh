@@ -14,3 +14,5 @@ cat dragon.txt
 
 # List the files in the current directory
 ls -lart
+
+# Editted ascii-script
