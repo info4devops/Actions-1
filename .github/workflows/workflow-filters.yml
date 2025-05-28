@@ -1,4 +1,4 @@
-name: Exploring Workflow Filters and Activities
+name: Exploring Workflow Filters and Activities.
 on:
     workflow_dispatch: 
     push: 
