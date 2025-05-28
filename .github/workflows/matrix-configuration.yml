@@ -1,4 +1,4 @@
-name: Matrix Configuration
+name: Matrix Strategy Example
 on: 
  push:
  workflow_dispatch:
