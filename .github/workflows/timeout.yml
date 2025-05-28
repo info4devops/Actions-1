@@ -1,0 +1,27 @@
+name: Exploring timeouts concept
+on: 
+  push
+
+jobs:
+  checkout:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+  build:
+    runs-on: ubuntu-latest
+    needs: checkout
+    steps:
+      - name: Build
+        run: echo "building..."
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: [checkout, build]
+    timeout-minutes: 1  # Job will be forcefully stopped after 1 minute
+    steps:
+      - name: Deploy
+        run: |
+          echo "Deploying..."
+          sleep 6000s  # This will be interrupted after 1 minute due to the timeout
